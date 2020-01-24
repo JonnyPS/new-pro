@@ -1,11 +1,12 @@
 {
   "name": "new-pro",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "release": "standard-version"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,18 @@
     "sass": "^1.25.0"
   },
   "devDependencies": {
-    "auto-changelog": "*"
+    "auto-changelog": "*",
+    "standard-version": "^7.1.0"
+  },
+  "auto-changelog": {
+    "output": "HISTORY.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false,
+    "includeBranch": [
+      "master",
+      "release-v2",
+      "release-v3"
+    ]
   }
 }
