@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "auto-changelog": "*",
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.1"
   },
   "auto-changelog": {
     "output": "HISTORY.md",
